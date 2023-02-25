@@ -43,6 +43,10 @@ SOURCES = source/wh_web_hook.cpp \
 # Libraries
 #
 
+defined(SETTINGS_PRI, var) {
+    include($${SETTINGS_PRI})
+}
+
 INCLUDEPATH += $${INECRYPTO_INCLUDE}
 
 unix {

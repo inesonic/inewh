@@ -35,6 +35,10 @@ SOURCES = test_inewh.cpp \
 # Libraries
 #
 
+defined(SETTINGS_PRI, var) {
+    include($${SETTINGS_PRI})
+}
+
 INEWH_BASE = $${OUT_PWD}/../inewh
 INCLUDEPATH += $${PWD}/../inewh/include
 
